@@ -1,0 +1,19 @@
+{
+  "model_type": "xgb",
+  "feature_names": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "temp_diff",
+    "power",
+    "wear_rate",
+    "torque_per_wear",
+    "high_load"
+  ],
+  "optimal_threshold": 0.7750000000000002,
+  "fn_cost": 50000,
+  "fp_cost": 2000,
+  "high_load_cutoff": 66873.75
+}

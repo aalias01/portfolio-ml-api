@@ -1,0 +1,439 @@
+{
+  "generated": "2026-07-06",
+  "source": "Raw ASHRAE chilled-water rows rebuilt with src.features",
+  "scoring": "Each scenario is a complete historical feature row scored against that unit's own baseline.",
+  "random_state": 20260706,
+  "scenario_count": 12,
+  "bands": [
+    {
+      "id": "normal",
+      "title": "Normal operation",
+      "range": [
+        90,
+        100.1
+      ]
+    },
+    {
+      "id": "watch",
+      "title": "Watch trend",
+      "range": [
+        70,
+        90
+      ]
+    },
+    {
+      "id": "elevated",
+      "title": "Elevated concern",
+      "range": [
+        50,
+        70
+      ]
+    },
+    {
+      "id": "high_attention",
+      "title": "High attention",
+      "range": [
+        0,
+        50
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "normal-1",
+      "band": "normal",
+      "title": "Normal operation",
+      "source_unit_id": "30",
+      "source_timestamp": "2016-12-12 05:00:00",
+      "reading": {
+        "building_id": "30",
+        "cop_proxy": 8.0,
+        "delta_t_supply_proxy": 7.6,
+        "delta_t_refrigerant_proxy": 1.2,
+        "load_ratio": 0.0191,
+        "rolling_cop_mean_24h": 8.0,
+        "rolling_cop_std_24h": 0.0,
+        "rolling_load_mean_24h": 0.0479,
+        "rolling_cop_mean_168h": 8.0,
+        "cop_deviation_from_baseline": 0.0,
+        "air_temperature": 20.6,
+        "dew_temperature": 19.4,
+        "wind_speed": 1.5,
+        "hour_of_day": 5,
+        "day_of_week": 0,
+        "is_weekend": 0,
+        "month": 12
+      },
+      "expected": {
+        "health_score": 95.0,
+        "health_tier": "healthy",
+        "anomaly_flag": 0,
+        "lof_flag": 0,
+        "if_lof_agree": 1
+      }
+    },
+    {
+      "id": "normal-2",
+      "band": "normal",
+      "title": "Normal operation",
+      "source_unit_id": "50",
+      "source_timestamp": "2016-05-18 04:00:00",
+      "reading": {
+        "building_id": "50",
+        "cop_proxy": 8.0,
+        "delta_t_supply_proxy": 8.1,
+        "delta_t_refrigerant_proxy": 1.1,
+        "load_ratio": 1.3477,
+        "rolling_cop_mean_24h": 8.0,
+        "rolling_cop_std_24h": 0.0,
+        "rolling_load_mean_24h": 1.1577,
+        "rolling_cop_mean_168h": 8.0,
+        "cop_deviation_from_baseline": 0.0,
+        "air_temperature": 21.1,
+        "dew_temperature": 20.0,
+        "wind_speed": 2.1,
+        "hour_of_day": 4,
+        "day_of_week": 2,
+        "is_weekend": 0,
+        "month": 5
+      },
+      "expected": {
+        "health_score": 95.0,
+        "health_tier": "healthy",
+        "anomaly_flag": 0,
+        "lof_flag": 0,
+        "if_lof_agree": 1
+      }
+    },
+    {
+      "id": "normal-3",
+      "band": "normal",
+      "title": "Normal operation",
+      "source_unit_id": "60",
+      "source_timestamp": "2016-05-27 09:00:00",
+      "reading": {
+        "building_id": "60",
+        "cop_proxy": 8.0,
+        "delta_t_supply_proxy": 9.2,
+        "delta_t_refrigerant_proxy": 3.9,
+        "load_ratio": 0.097,
+        "rolling_cop_mean_24h": 8.0,
+        "rolling_cop_std_24h": 0.0,
+        "rolling_load_mean_24h": 0.0756,
+        "rolling_cop_mean_168h": 8.0,
+        "cop_deviation_from_baseline": 0.5208,
+        "air_temperature": 22.2,
+        "dew_temperature": 18.3,
+        "wind_speed": 2.1,
+        "hour_of_day": 9,
+        "day_of_week": 4,
+        "is_weekend": 0,
+        "month": 5
+      },
+      "expected": {
+        "health_score": 95.0,
+        "health_tier": "healthy",
+        "anomaly_flag": 0,
+        "lof_flag": 0,
+        "if_lof_agree": 1
+      }
+    },
+    {
+      "id": "watch-1",
+      "band": "watch",
+      "title": "Watch trend",
+      "source_unit_id": "7",
+      "source_timestamp": "2016-09-01 10:00:00",
+      "reading": {
+        "building_id": "7",
+        "cop_proxy": 8.0,
+        "delta_t_supply_proxy": 10.3,
+        "delta_t_refrigerant_proxy": 1.1,
+        "load_ratio": 0.1395,
+        "rolling_cop_mean_24h": 8.0,
+        "rolling_cop_std_24h": 0.0,
+        "rolling_load_mean_24h": 0.1007,
+        "rolling_cop_mean_168h": 8.0,
+        "cop_deviation_from_baseline": 0.0,
+        "air_temperature": 23.3,
+        "dew_temperature": 22.2,
+        "wind_speed": 2.6,
+        "hour_of_day": 10,
+        "day_of_week": 3,
+        "is_weekend": 0,
+        "month": 9
+      },
+      "expected": {
+        "health_score": 78.0,
+        "health_tier": "monitor",
+        "anomaly_flag": 0,
+        "lof_flag": 0,
+        "if_lof_agree": 1
+      }
+    },
+    {
+      "id": "watch-2",
+      "band": "watch",
+      "title": "Watch trend",
+      "source_unit_id": "9",
+      "source_timestamp": "2016-09-17 11:00:00",
+      "reading": {
+        "building_id": "9",
+        "cop_proxy": 8.0,
+        "delta_t_supply_proxy": 12.0,
+        "delta_t_refrigerant_proxy": 1.1,
+        "load_ratio": 0.129,
+        "rolling_cop_mean_24h": 8.0,
+        "rolling_cop_std_24h": 0.0,
+        "rolling_load_mean_24h": 0.1107,
+        "rolling_cop_mean_168h": 8.0,
+        "cop_deviation_from_baseline": 0.0104,
+        "air_temperature": 25.0,
+        "dew_temperature": 23.9,
+        "wind_speed": 2.1,
+        "hour_of_day": 11,
+        "day_of_week": 5,
+        "is_weekend": 1,
+        "month": 9
+      },
+      "expected": {
+        "health_score": 78.0,
+        "health_tier": "monitor",
+        "anomaly_flag": 0,
+        "lof_flag": 0,
+        "if_lof_agree": 1
+      }
+    },
+    {
+      "id": "watch-3",
+      "band": "watch",
+      "title": "Watch trend",
+      "source_unit_id": "14",
+      "source_timestamp": "2016-12-23 21:00:00",
+      "reading": {
+        "building_id": "14",
+        "cop_proxy": 8.0,
+        "delta_t_supply_proxy": 12.0,
+        "delta_t_refrigerant_proxy": 8.9,
+        "load_ratio": 0.0489,
+        "rolling_cop_mean_24h": 8.0,
+        "rolling_cop_std_24h": 0.0,
+        "rolling_load_mean_24h": 0.0399,
+        "rolling_cop_mean_168h": 8.0,
+        "cop_deviation_from_baseline": 0.0,
+        "air_temperature": 25.0,
+        "dew_temperature": 16.1,
+        "wind_speed": 6.2,
+        "hour_of_day": 21,
+        "day_of_week": 4,
+        "is_weekend": 0,
+        "month": 12
+      },
+      "expected": {
+        "health_score": 78.0,
+        "health_tier": "monitor",
+        "anomaly_flag": 0,
+        "lof_flag": 0,
+        "if_lof_agree": 1
+      }
+    },
+    {
+      "id": "elevated-1",
+      "band": "elevated",
+      "title": "Elevated concern",
+      "source_unit_id": "15",
+      "source_timestamp": "2016-03-23 06:00:00",
+      "reading": {
+        "building_id": "15",
+        "cop_proxy": 8.0,
+        "delta_t_supply_proxy": 0.9,
+        "delta_t_refrigerant_proxy": 4.5,
+        "load_ratio": 0.0088,
+        "rolling_cop_mean_24h": 8.0,
+        "rolling_cop_std_24h": 0.0,
+        "rolling_load_mean_24h": 0.0262,
+        "rolling_cop_mean_168h": 8.0,
+        "cop_deviation_from_baseline": 0.0416,
+        "air_temperature": 13.9,
+        "dew_temperature": 9.4,
+        "wind_speed": 0.0,
+        "hour_of_day": 6,
+        "day_of_week": 2,
+        "is_weekend": 0,
+        "month": 3
+      },
+      "expected": {
+        "health_score": 60.0,
+        "health_tier": "warning",
+        "anomaly_flag": 0,
+        "lof_flag": 0,
+        "if_lof_agree": 1
+      }
+    },
+    {
+      "id": "elevated-2",
+      "band": "elevated",
+      "title": "Elevated concern",
+      "source_unit_id": "75",
+      "source_timestamp": "2016-05-23 23:00:00",
+      "reading": {
+        "building_id": "75",
+        "cop_proxy": 8.0,
+        "delta_t_supply_proxy": 14.8,
+        "delta_t_refrigerant_proxy": 11.1,
+        "load_ratio": 0.0039,
+        "rolling_cop_mean_24h": 6.4375,
+        "rolling_cop_std_24h": 3.1114,
+        "rolling_load_mean_24h": 0.0498,
+        "rolling_cop_mean_168h": 7.2411,
+        "cop_deviation_from_baseline": 0.6875,
+        "air_temperature": 27.8,
+        "dew_temperature": 16.7,
+        "wind_speed": 6.2,
+        "hour_of_day": 23,
+        "day_of_week": 0,
+        "is_weekend": 0,
+        "month": 5
+      },
+      "expected": {
+        "health_score": 60.0,
+        "health_tier": "warning",
+        "anomaly_flag": 0,
+        "lof_flag": 0,
+        "if_lof_agree": 1
+      }
+    },
+    {
+      "id": "elevated-3",
+      "band": "elevated",
+      "title": "Elevated concern",
+      "source_unit_id": "78",
+      "source_timestamp": "2016-11-24 16:00:00",
+      "reading": {
+        "building_id": "78",
+        "cop_proxy": 8.0,
+        "delta_t_supply_proxy": 12.6,
+        "delta_t_refrigerant_proxy": 8.4,
+        "load_ratio": 0.0498,
+        "rolling_cop_mean_24h": 6.125,
+        "rolling_cop_std_24h": 3.3174,
+        "rolling_load_mean_24h": 0.0348,
+        "rolling_cop_mean_168h": 6.0132,
+        "cop_deviation_from_baseline": 1.8137,
+        "air_temperature": 25.6,
+        "dew_temperature": 17.2,
+        "wind_speed": 1.5,
+        "hour_of_day": 16,
+        "day_of_week": 3,
+        "is_weekend": 0,
+        "month": 11
+      },
+      "expected": {
+        "health_score": 60.0,
+        "health_tier": "warning",
+        "anomaly_flag": 0,
+        "lof_flag": 0,
+        "if_lof_agree": 1
+      }
+    },
+    {
+      "id": "high_attention-1",
+      "band": "high_attention",
+      "title": "High attention",
+      "source_unit_id": "244",
+      "source_timestamp": "2016-12-17 03:00:00",
+      "reading": {
+        "building_id": "244",
+        "cop_proxy": 0.5,
+        "delta_t_supply_proxy": 8.1,
+        "delta_t_refrigerant_proxy": 14.4,
+        "load_ratio": 0.0,
+        "rolling_cop_mean_24h": 4.6121,
+        "rolling_cop_std_24h": 3.7697,
+        "rolling_load_mean_24h": 0.0009,
+        "rolling_cop_mean_168h": 3.9498,
+        "cop_deviation_from_baseline": -2.8789,
+        "air_temperature": 21.1,
+        "dew_temperature": 6.7,
+        "wind_speed": 6.7,
+        "hour_of_day": 3,
+        "day_of_week": 5,
+        "is_weekend": 1,
+        "month": 12
+      },
+      "expected": {
+        "health_score": 24.4,
+        "health_tier": "critical",
+        "anomaly_flag": 1,
+        "lof_flag": 1,
+        "if_lof_agree": 1
+      }
+    },
+    {
+      "id": "high_attention-2",
+      "band": "high_attention",
+      "title": "High attention",
+      "source_unit_id": "256",
+      "source_timestamp": "2016-02-01 07:00:00",
+      "reading": {
+        "building_id": "256",
+        "cop_proxy": 0.5,
+        "delta_t_supply_proxy": 0.0,
+        "delta_t_refrigerant_proxy": 8.4,
+        "load_ratio": 0.0002,
+        "rolling_cop_mean_24h": 0.5033,
+        "rolling_cop_std_24h": 0.011,
+        "rolling_load_mean_24h": 0.0002,
+        "rolling_cop_mean_168h": 0.6217,
+        "cop_deviation_from_baseline": -0.1253,
+        "air_temperature": 12.8,
+        "dew_temperature": 4.4,
+        "wind_speed": 12.4,
+        "hour_of_day": 7,
+        "day_of_week": 0,
+        "is_weekend": 0,
+        "month": 2
+      },
+      "expected": {
+        "health_score": 22.8,
+        "health_tier": "critical",
+        "anomaly_flag": 1,
+        "lof_flag": 1,
+        "if_lof_agree": 1
+      }
+    },
+    {
+      "id": "high_attention-3",
+      "band": "high_attention",
+      "title": "High attention",
+      "source_unit_id": "1015",
+      "source_timestamp": "2016-09-07 07:00:00",
+      "reading": {
+        "building_id": "1015",
+        "cop_proxy": 8.0,
+        "delta_t_supply_proxy": 4.2,
+        "delta_t_refrigerant_proxy": 15.0,
+        "load_ratio": 0.3042,
+        "rolling_cop_mean_24h": 4.3385,
+        "rolling_cop_std_24h": 3.6742,
+        "rolling_load_mean_24h": 0.1738,
+        "rolling_cop_mean_168h": 4.8249,
+        "cop_deviation_from_baseline": 0.7669,
+        "air_temperature": 17.2,
+        "dew_temperature": 2.2,
+        "wind_speed": 1.5,
+        "hour_of_day": 7,
+        "day_of_week": 2,
+        "is_weekend": 0,
+        "month": 9
+      },
+      "expected": {
+        "health_score": 23.9,
+        "health_tier": "critical",
+        "anomaly_flag": 1,
+        "lof_flag": 1,
+        "if_lof_agree": 1
+      }
+    }
+  ]
+}
